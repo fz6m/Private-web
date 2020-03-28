@@ -1,4 +1,4 @@
-onload = function() {
+function click() {
     var click_cnt = 0;
     var $html = document.getElementsByTagName("html")[0];
     var $body = document.getElementsByTagName("body")[0];
@@ -70,4 +70,56 @@ onload = function() {
     };
 };
 
+function hidden() {
+    let hour = new Date().getHours()
+    let str = ''
+    if (hour < 6) {
+      str = '修仙中……'
+    } else if (hour < 9) {
+      str = '早上好！'
+    } else if (hour < 12) {
+      str = '上午好！'
+    } else if (hour < 14) {
+      str = '中午好！'
+    } else if (hour < 17) {
+      str = '下午好！'
+    } else if (hour < 19) {
+      str = '傍晚好！'
+    } else if (hour < 22) {
+      str = '晚上好！'
+    } else {
+      str = '夜深了，要早点休息哦！'
+    }
+   
+    function c () {
+      document.title = document[a] ? str + '[' + d + ']' : d
+    }
+   
+    let a = document.title
+    let b = document.title
+    let d = document.title
+    typeof document.hidden !== 'undefined' ? (a = 'hidden', b = 'visibilitychange')
+      : typeof document.mozHidden !== 'undefined' ? (a = 'mozHidden', b = 'mozvisibilitychange')
+      : typeof document.webkitHidden !== 'undefined' && (a = 'webkitHidden', b = 'webkitvisibilitychange')
+    typeof document.addEventListener === 'undefined' && typeof document[a] === 'undefined' || document.addEventListener(b, c, !1)
+  };
 
+const c = 
+  `
+        ::::::::::       :::::::::       ::::::::         :::   ::: 
+       :+:                   :+:       :+:    :+:       :+:+: :+:+: 
+      +:+                  +:+        +:+             +:+ +:+:+ +:+ 
+     :#::+::#            +#+         +#++:++#+       +#+  +:+  +#+  
+    +#+                +#+          +#+    +#+      +#+       +#+   
+   #+#               #+#           #+#    #+#      #+#       #+#    
+  ###              #########       ########       ###       ###     
+  `;
+  
+console.log("%c%s",
+              "color: #FF69B4; font-size: 15px;",
+              c);
+
+window.onload = function() {
+    this.click();
+    this.hidden();
+};
