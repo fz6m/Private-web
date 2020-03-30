@@ -291,7 +291,7 @@ function scrollBar() {
                 if (result == 100)
                     cached.css("background", "#5aaadb");
             } else {
-                cached.css("background", "orange");
+                cached.css("background", "#ffc0cb");
             }
             $(".toc-container").css("height", $(".site-content").outerHeight());
             $(".skin-menu").removeClass('show');

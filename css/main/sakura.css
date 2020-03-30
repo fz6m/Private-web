@@ -102,8 +102,8 @@
 }
 
 .entry-content a:hover {
-    color: orange;
-    text-decoration: underline orange
+    color: #ffc0cb;
+    text-decoration: underline #ffc0cb
 }
 
 h1.entry-title {
