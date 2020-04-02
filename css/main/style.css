@@ -3842,8 +3842,7 @@ li.feature-2 {
 
 #centerbg {
     width: 100%;
-    /* 修正 iPad 横屏问题 */
-    height: 100vh !important;
+    height: 550px;
     margin: 0;
     padding: 0;
     background-position: top center;
@@ -3856,7 +3855,6 @@ li.feature-2 {
 @media (max-width:860px) {
     #centerbg {
         /* 手机全屏 */
-        height: 100vh !important;
         background-attachment: scroll
     }
     #video-container,
