@@ -1,9 +1,3 @@
-/*！
- * Sakura theme application bundle
- * @author Mashiro
- * @url https://2heng.xin
- * @date 2019.8.3
- */
 mashiro_global.variables = new function () {
     this.skinSecter = true;
 }
@@ -55,13 +49,13 @@ function removeCookie(name) {
 function imgError(ele, type) {
     switch (type) {
         case 1:
-            ele.src = 'https://view.moezx.cc/images/2017/12/30/Transparent_Akkarin.th.jpg';
+            ele.src = 'https://cdn.jsdelivr.net/gh/fz6m/Private-web@1.5/image/error/Transparent_Akkarin.th.jpg';
             break;
         case 2:
-            ele.src = 'https://gravatar.shino.cc/avatar/?s=80&d=mm&r=g';
+            ele.src = 'https://cdn.jsdelivr.net/gh/fz6m/Private-web@1.5/image/error/Transparent_Akkarin.th.jpg';
             break;
         default:
-            ele.src = 'https://view.moezx.cc/images/2018/05/13/image-404.png';
+            ele.src = 'https://cdn.jsdelivr.net/gh/fz6m/Private-web@1.5/image/error/image-404.png';
     }
 }
 
@@ -198,7 +192,7 @@ function attach_image() {
                     }, 1000);
                     if (res.status == 200) {
                         var get_the_url = res.proxy;
-                        $('#upload-img-show').append('<img class="lazyload upload-image-preview" src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.0.2/img/svg/loader/trans.ajax-spinner-preloader.svg" data-src="' + get_the_url + '" onclick="window.open(\'' + get_the_url + '\')" onerror="imgError(this)" />');
+                        $('#upload-img-show').append('<img class="lazyload upload-image-preview" src="https://cdn.jsdelivr.net/gh/fz6m/Private-web@1.5/image/loading/trans.ajax-spinner-preloader.svg" data-src="' + get_the_url + '" onclick="window.open(\'' + get_the_url + '\')" onerror="imgError(this)" />');
                         lazyload();
                         addComment.createButterbar("图片上传成功~<br>Uploaded successfully~");
                         grin(get_the_url, type = 'Img');
@@ -525,7 +519,7 @@ function killCoverVideo() {
 
 function coverVideoIni() {
     if ($('video').hasClass('hls')) {
-        $.getScript("https://cdn.jsdelivr.net/gh/mashirozx/Sakura@3.3.3/cdn/js/src/16.hls.js", function(){
+        $.getScript("https://cdn.jsdelivr.net/gh/fz6m/Private-web@1.5/js/main/hls.js", function(){
             var video = addComment.I('coverVideo');
             var video_src = $('#coverVideo').attr('data-src');
             if (Hls.isSupported()) {
@@ -996,8 +990,8 @@ setTimeout(function () {
 mashiro_global.ini.normalize();
 loadCSS(mashiro_option.jsdelivr_css_src);
 loadCSS(mashiro_option.entry_content_theme_src);
-loadCSS("https://at.alicdn.com/t/font_679578_qyt5qzzavdo39pb9.css");
-loadCSS("https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css");
+loadCSS("https://cdn.jsdelivr.net/gh/fz6m/Private-web@1.5/css/main/font_679578.css");
+loadCSS("https://cdn.jsdelivr.net/gh/fz6m/Private-web@1.5/css/main/APlayer.min.css");
 loadCSS("https://fonts.googleapis.com/css?family=Noto+SerifMerriweather|Merriweather+Sans|Source+Code+Pro|Ubuntu:400,700|Noto+Serif+SC");
 (function webpackUniversalModuleDefinition(b, a) {
     if (typeof exports === "object" && typeof module === "object") {

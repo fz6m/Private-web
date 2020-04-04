@@ -1,3 +1,4 @@
+/* custom.css */
 @media (min-width: 1024px){
 	.post-date {
 		background-color: #FFC0CB !important;
@@ -230,7 +231,8 @@
 	}
 }
 
-/* 说说 */
+
+/* dynamic.css */
 body.theme-dark .cbp_tmtimeline::before {
 	background:RGBA(255,255,255,0.06)
 }
@@ -380,6 +382,62 @@ p.shuoshuo_time {
 	-moz-transform: rotateZ(720deg)
 }
 
+#pagination_dynamic {
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    margin: 40px 0 80px;
+    display: inline-block
+}
+
+#pagination_dynamic a:hover {
+    -webkit-box-shadow: 0 0 4px rgba(255, 192, 203, .85);
+    -moz-box-shadow: 0 0 4px rgba(255, 192, 203, .85);
+    -o-box-shadow: 0 0 4px rgba(255, 192, 203, .85);
+    box-shadow: 0 0 4px rgba(255, 192, 203, .85)
+}
+
+#pagination_dynamic a {
+    padding: 13px 35px;
+    border: 1px solid #D6D6D6;
+    border-radius: 50px;
+    color: #ADADAD
+}
+
+#pagination_dynamic span {
+    color: #989898;
+    font-size: 15px
+}
+
+#pagination_dynamic a:hover {
+    border: 1px solid #FFC0CB;
+    color: #FFC0CB
+}
+
+#pagination_dynamic .loading {
+    background: url(https://cdn.jsdelivr.net/gh/fz6m/Private-web@1.5/image/loading/loading-circle.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #555;
+    border: none;
+    background-size: auto 100%
+}
+
+#pagination_dynamic .loading:hover {
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -o-box-shadow: none;
+    box-shadow: none
+}
+
+#pagination_dynamic.pagination_dynamic-archive {
+    margin: 80px 0
+}
+
+
+/* font-zhanku */
+
 @font-face {
     font-family: "zhanku";
     src: url("https://cdn.jsdelivr.net/gh/fz6m/Private-web@1.0/font/zhanku/zhanku.eot"); /* IE9 */
@@ -391,15 +449,5 @@ p.shuoshuo_time {
     font-weight: normal;
 }
 
-
-#centerbg {
-	height: 100vh !important;
-}
-
-@media (max-width:860px) {
-    #centerbg {
-		height: 100vh !important;
-	}
-}
 
 
