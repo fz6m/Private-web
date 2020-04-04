@@ -991,7 +991,7 @@ mashiro_global.ini.normalize();
 loadCSS(mashiro_option.jsdelivr_css_src);
 loadCSS(mashiro_option.entry_content_theme_src);
 loadCSS("https://cdn.jsdelivr.net/gh/fz6m/Private-web@1.5/css/main/font_679578.css");
-loadCSS("https://cdn.jsdelivr.net/gh/fz6m/Private-web@1.5/css/main/APlayer.min.css");
+loadCSS("https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css");
 loadCSS("https://fonts.googleapis.com/css?family=Noto+SerifMerriweather|Merriweather+Sans|Source+Code+Pro|Ubuntu:400,700|Noto+Serif+SC");
 (function webpackUniversalModuleDefinition(b, a) {
     if (typeof exports === "object" && typeof module === "object") {
