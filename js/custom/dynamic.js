@@ -1,4 +1,8 @@
-
+// 加载 jQuery
+var script=document.createElement("script"); 
+script.type="text/javascript"; 
+script.src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"; 
+document.getElementsByTagName('head')[0].appendChild(script); 
 // 头像动画
 var oldClass = "";
 var Obj = "";
@@ -41,3 +45,7 @@ function load_post_dynamic() {
     });
     return false;
 }
+// 去除preloader
+$(function () {
+    $('.preloader-plus').remove()
+})
