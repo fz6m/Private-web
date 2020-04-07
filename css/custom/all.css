@@ -449,5 +449,14 @@ p.shuoshuo_time {
     font-weight: normal;
 }
 
+/* 标题变大 */
+.post-title-plus {
+	transition: all .35s ease;
+    letter-spacing: .5px;
+    text-shadow: 2px 2px 4px rgba(216,191,216,.5);
+}
 
 
+.post-title-plus:hover {
+	letter-spacing: 1px;
+}
