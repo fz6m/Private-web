@@ -1,0 +1,22 @@
+/* 登录页自定义 css */
+
+#login .submit .button {
+	background: rgb(255,105,180,.7) !important;
+}
+
+#slider {
+	border-radius: 10px !important;
+}
+
+#slider_bg {
+	background: linear-gradient(to left, #DDA0DD, #FFB6C1) !important;
+}
+
+#label {
+	border: none !important;
+}
+
+#login form .input {
+	border-radius: 10px !important;
+}
+
