@@ -594,11 +594,11 @@ p.shuoshuo_time {
 }
 
 /*h3标题优化*/
-.entry-content-custom h3 {
+.entry-content h3 {
 	color: #404040 !important;
 }
 
-.entry-content-custom h3:after {
+.entry-content h3:after {
     content: "\00a0" !important;
     transition: all .35s;
     content: ""!important;
@@ -612,23 +612,23 @@ p.shuoshuo_time {
     box-sizing: border-box;
     width: 1em;
 }
-.entry-content-custom h3:hover:after {
+.entry-content h3:hover:after {
     width: 2em;
 }
 
 /*h1标题优化*/
-h1.entry-title-custom {
+h1.entry-title {
     font-family: 'Merriweather Sans',Helvetica,Tahoma,Arial,'PingFang SC','Hiragino Sans GB','Microsoft Yahei','WenQuanYi Micro Hei',sans-serif;
     font-size: 40px !important;
 }
 
-p.entry-census-custom {
+p.entry-census {
     font-family: 'Merriweather Sans',Helvetica,Tahoma,Arial,'PingFang SC','Hiragino Sans GB','Microsoft Yahei','WenQuanYi Micro Hei',sans-serif;
     font-size: 15px !important;
     margin-bottom: 20px;
 }
 @media (max-width: 860px) {
-	h1.entry-title-custom {
+	h1.entry-title {
 		font-size: 30px !important;
 	}
 }
