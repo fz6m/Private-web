@@ -1,6 +1,6 @@
 
 // 头像动画
-var oldClass = "";
+$(function () {var oldClass = "";
 var Obj = "";
 $(".cbp_tmtimeline li").hover(function () {
     Obj = $(this).children(".shuoshuo_author_img");
@@ -8,7 +8,7 @@ $(".cbp_tmtimeline li").hover(function () {
     Obj.classList.add("zhuan");
 }, function () {
     Obj.classList.remove("zhuan");
-});
+})});
 // 分页
 $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
 $('body').on('click', '#pagination_dynamic a', function () {
