@@ -387,7 +387,6 @@
 /*h1标题优化*/
 h1.entry-title {
     font-family: 'Merriweather Sans',Helvetica,Tahoma,Arial,'PingFang SC','Hiragino Sans GB','Microsoft Yahei','WenQuanYi Micro Hei',sans-serif;
-    font-size: 40px !important;
 }
 
 p.entry-census {
@@ -395,9 +394,9 @@ p.entry-census {
     font-size: 15px !important;
     margin-bottom: 20px;
 }
-@media (max-width: 860px) {
-	h1.entry-title {
-		font-size: 30px !important;
-	}
-}
 
+/* 分类页面标题优化 */
+h1.cat-title {
+    text-shadow: 0px 0px 10px #666666;
+    font-family: 'Merriweather Sans',Helvetica,Tahoma,Arial,'PingFang SC','Hiragino Sans GB','Microsoft Yahei','WenQuanYi Micro Hei',sans-serif;
+}
