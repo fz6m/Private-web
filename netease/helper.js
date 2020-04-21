@@ -1,35 +1,37 @@
 (function() {
     'use strict';
-    // var script = document.createElement('script');script.src = "https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js";document.head.appendChild(script);
+    var script = document.createElement('script');script.src = "https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js";document.head.appendChild(script);
     var check = [
         'pxj', 'diss', 'ky', '酸', '素质', '人品', '不好', '垃圾', '不行', '就这', '滚', '小学生',
         'bb', '哔哔', '呵', '鸡', '黑', 'cxk', '抄', '难听', '举报', '差', '删', '聋子', '??', '？？', 'dy', '某音', '吐槽', '叭叭', '骂', '不累吗', '怼',
         '凭什么', '废物', 'sb', 'nm', '爬', '狗', '引战', '阴间', '阳间', '阴阳怪气', '口德', '盗', '不是人', '傻', 'nt', '不喜欢', '批判', '粪', '道德',
-        '质疑', '咬', '🐴', '屌丝', '不能听', '吹', '弟弟', '热度', '不尊重', '喷', '撕', '啥玩意'
+        '质疑', '咬', '🐴', '屌丝', '不能听', '吹', '弟弟', '热度', '不尊重', '喷', '撕', '啥玩意', '聋', '陈词滥调', '词不达意', '不咋', '土嗨', '双标',
+        '很土', '什么玩意', '破歌', '杠', '💩', '了不起', '孤儿', '歧视', '键盘', '抽风', '嘲讽', '找茬', 'gck', '🐔'
     ]
     var building = [
-        '盖楼', '冲', '打卡', '刷', '999', '1万', '10万', '第一', '沙发'
+        '盖楼', '冲', '打卡', '刷', '999', '1万', '10万', '第一', '沙发', '留个名', '火钳', '留名'
     ]
     var praise = [
-        '赞', '说句话', '说话', '和我说', '眼熟'
+        '赞', '说句话', '说话', '和我说', '眼熟', '有没有', '有人', '私信', '只有我', '就我', '没人', '淹没'
     ]
     var marketing = [
         'http', 'www', '.cn', '.com', '减了', '斤', '动态', '电台', '看看', '群', '吃饭', '穷', '听我', '歌单', '主页'
     ]
     var other = [
-        '锤', '死', '杀', '复制'
+        '锤', '死', '杀', '复制', '陌生人'
     ]
     var htmlSource = {
         'battle': '<span class="battle">引战可能</span>',
         'building': '<span class="battle building">盖楼打卡</span>',
         'praise': '<span class="battle praise">求赞求粉</span>',
         'marketing': '<span class="battle marketing">营销宣传</span>',
-        'hot': '<span class="battle hot2">注意高赞</span>',
+        'hot': '<span class="battle hot2">注意热评</span>',
         'other': '<span class="battle other">其他问题</span>',
         'none': '<span class="none">未检测到，自行判断~</span>',
         'ing': '<span class="none">检测中...</span>',
         'spanHtml': '<span>[text]</span>',
-        'msgHtml': '<div class="msg" style="margin-top: 4%;height: 72px;align-items: center;justify-content: center;display: flex;flex-wrap: wrap;flex-direction: row;">'
+        'msgHtml': '<div class="msg" style="margin-top: 4%;height: 72px;align-items: center;justify-content: center;display: flex;flex-wrap: wrap;flex-direction: row;">',
+        'initialization': '<p class="gap">关键词高亮v0.2 使用注意：</p><p class="gap">1. 第一次进入审核或表态刷新初始化后再使用，不刷新就是不使用</p><p class="gap">2. 切换审核或者表态，进入后也要刷新再使用~</p>'
     }
     var globalCSS = '.conventional {border-radius: 5px;background-color: rgba(255, 18, 0, 0.5);padding: 1px 2px;color: white;}\
                     span.battle {background-color: rgba(255, 18, 0, 0.5);color: white;border-radius: 10px;padding: 2px 6px;font-size: 14px;margin-right: 10px;margin-bottom: 5px;}\
@@ -49,7 +51,21 @@
         'hot': '<span style="color: #000000 !important;">[text]</span> 赞',
         'other': '</span><span class="conventional other">[text]</span><span>'
     }
+    var initialization = function() {
+        if($('body title').attr('test') == '云村派出所') {
+            $('.m-zhyrank').append(htmlSource.initialization)
+        }
+    }
     var main = function(time) {
+        var url = window.location.href
+        if(url.indexOf('history') != -1) {
+            console.log(1);
+            return
+        }
+        if(url.indexOf('music.163.com/police/check') == -1 && url.indexOf('music.163.com/police/vote') == -1) {
+            console.log(1);
+            return
+        }
         if($('.none') != null) {
             $('.none').text('检测中...')
         }
@@ -200,10 +216,11 @@
                         $(this).css('display', 'none')
                     }
                 })
-                console.log(1);
+                console.log('-----------------------');
             },time || 0)
     }
     var mainTest = function() {
+        if($('body title').attr('test') == '云村派出所') {return}
         click()
         if($('body title').attr('test') != $('body title').text()) {
             main(1000)
@@ -233,10 +250,14 @@
         }
         catch(e) {}
     }
-    var load = function() {setTimeout(function() {main();
-                                                  click();
-                                                  $('body title').attr('test',$('body title').text())
-                                                  $('body title').bind('DOMSubtreeModified',mainTest)
-                                                 },1000)}
+    var load = function() {
+        setTimeout(function() {
+            $('body title').attr('test',$('body title').text())
+            initialization();
+            main();
+            click();
+            $('body title').bind('DOMSubtreeModified',mainTest)
+        },1000)
+    }
     window.onload = load
 })();
