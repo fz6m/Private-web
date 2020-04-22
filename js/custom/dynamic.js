@@ -2,15 +2,16 @@
 // 头像动画
 $(function () {var oldClass = "";
 var Obj = "";
-$(".cbp_tmtimeline li").hover(function () {
-    Obj = $(this).children(".shuoshuo_author_img");
-    Obj = Obj.children("img")[0];
-    Obj.classList.add("zhuan");
-}, function () {
-    Obj = $(this).children(".shuoshuo_author_img");
-    Obj = Obj.children("img")[0];
-    Obj.classList.remove("zhuan");
-})});
+if($(".cbp_tmtimeline li") != null) {
+    $(".cbp_tmtimeline li").hover(function () {
+        Obj = $(this).children(".shuoshuo_author_img");
+        Obj = Obj.children("img")[0];
+        Obj.classList.add("zhuan");
+    }, function () {
+        Obj.classList.remove("zhuan");
+    })};
+}
+)
 // 分页
 $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
 $('body').on('click', '#pagination_dynamic a', function () {
