@@ -83,7 +83,8 @@ div.cbp_tmlabel > p {
 	/* transform:scale(1.05);*/
     transform:translateY(-3px);
 	z-index:1;
-	-webkit-box-shadow:0 15px 32px rgba(0,0,0,0.15) !important
+	-webkit-box-shadow:0 15px 32px rgba(0,0,0,0.15) !important;
+	cursor: url(https://cdn.jsdelivr.net/gh/fz6m/Private-web@1.5/image/cursor/normal.cur), auto !important
 }
 
 .cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel {

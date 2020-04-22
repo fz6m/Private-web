@@ -7,6 +7,8 @@ $(".cbp_tmtimeline li").hover(function () {
     Obj = Obj.children("img")[0];
     Obj.classList.add("zhuan");
 }, function () {
+    Obj = $(this).children(".shuoshuo_author_img");
+    Obj = Obj.children("img")[0];
     Obj.classList.remove("zhuan");
 })});
 // 分页
