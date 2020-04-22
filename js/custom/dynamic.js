@@ -3,9 +3,9 @@
 $(function () {
 if($(".cbp_tmtimeline li") != null) {
     $(".cbp_tmtimeline li").hover(function () {
-        $(this).children(".shuoshuo_author_img").children("img")[0].addClass("zhuan");
+        $(this).children(".shuoshuo_author_img").children("img").addClass("zhuan");
     }, function () {
-        $(this).children(".shuoshuo_author_img").children("img")[0].removeClass("zhuan");
+        $(this).children(".shuoshuo_author_img").children("img").removeClass("zhuan");
     })};
 }
 )
