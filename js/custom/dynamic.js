@@ -1,14 +1,11 @@
 
 // 头像动画
-$(function () {var oldClass = "";
-var Obj = "";
+$(function () {
 if($(".cbp_tmtimeline li") != null) {
     $(".cbp_tmtimeline li").hover(function () {
-        Obj = $(this).children(".shuoshuo_author_img");
-        Obj = Obj.children("img")[0];
-        Obj.classList.add("zhuan");
+        $(this).children(".shuoshuo_author_img").children("img")[0].addClass("zhuan");
     }, function () {
-        Obj.classList.remove("zhuan");
+        $(this).children(".shuoshuo_author_img").children("img")[0].removeClass("zhuan");
     })};
 }
 )
