@@ -234,7 +234,7 @@ h1.entry-title {
     padding: 2px;
     text-shadow: none;
     border-radius: 0 0 5px 5px;
-    cursor: url(https://cdn.jsdelivr.net/gh/fz6m/Private-web@1.5/image/cursor/texto.cur), auto
+    cursor: url(https://cdn.jsdelivr.net/gh/fz6m/Private-web@1.5/image/cursor/texto.cur) 15 15, auto
 }
 
 .highlight-wrap code[data-rel]:before {

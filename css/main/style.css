@@ -134,7 +134,7 @@ template {
 a {
     background-color: transparent;
     text-decoration: none;
-    cursor: url(https://cdn.jsdelivr.net/gh/fz6m/Private-web@1.5/image/cursor/ayuda.cur), auto
+    cursor: url(https://cdn.jsdelivr.net/gh/fz6m/Private-web@1.5/image/cursor/ayuda.cur) 15 15, auto
 }
 
 a:active,
@@ -326,7 +326,7 @@ h6 {
 
 p {
     margin-bottom: 1.5em;
-    cursor: url(https://cdn.jsdelivr.net/gh/fz6m/Private-web@1.5/image/cursor/texto.cur), auto
+    cursor: url(https://cdn.jsdelivr.net/gh/fz6m/Private-web@1.5/image/cursor/texto.cur) 15 15, auto
 }
 
 cite,
@@ -1819,7 +1819,7 @@ h1.page-title.mb- {
     background-size: contain;
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
-    cursor: url(https://cdn.jsdelivr.net/gh/fz6m/Private-web@1.5/image/cursor/No_Disponible.cur), auto;
+    cursor: url(https://cdn.jsdelivr.net/gh/fz6m/Private-web@1.5/image/cursor/No_Disponible.cur) 15 15, auto;
     opacity: 1
 }
 
@@ -4360,7 +4360,7 @@ i.iconfont.js-toggle-search.iconsearch {
 
 .ins-section .ins-section-header,.ins-section .ins-search-item {
 	padding: 8px 15px;
-	cursor: url(https://cdn.jsdelivr.net/gh/fz6m/Private-web@1.5/image/cursor/ayuda.cur),auto;
+	cursor: url(https://cdn.jsdelivr.net/gh/fz6m/Private-web@1.5/image/cursor/ayuda.cur) 15 15,auto;
 }
 
 .ins-section .ins-search-item .search-keyword {
@@ -4395,7 +4395,7 @@ i.iconfont.js-toggle-search.iconsearch {
 	font-size: 12px;
 	color: #9a9a9a;
 	margin: 5px 0 0 0px;
-	cursor: url(https://cdn.jsdelivr.net/gh/fz6m/Private-web@1.5/image/cursor/ayuda.cur),auto;
+	cursor: url(https://cdn.jsdelivr.net/gh/fz6m/Private-web@1.5/image/cursor/ayuda.cur) 15 15,auto;
 }
 
 .ins-section .ins-search-item:hover,.ins-section .ins-search-item.active {
@@ -6067,7 +6067,7 @@ i.iconfont.down {
     border: 0;
     color: #fff;
     line-height: 1;
-    cursor: url(https://cdn.jsdelivr.net/gh/fz6m/Private-web@1.5/image/cursor/No_Disponible.cur), auto;
+    cursor: url(https://cdn.jsdelivr.net/gh/fz6m/Private-web@1.5/image/cursor/No_Disponible.cur) 15 15, auto;
     font-size: 14px;
     font-weight: 500;
     padding: 7px 15px;
@@ -6209,7 +6209,7 @@ input.botui-actions-text-input::-moz-focus-inner {
 }
 
 button.botui-actions-buttons-button {
-    cursor: url(https://cdn.jsdelivr.net/gh/fz6m/Private-web@1.5/image/cursor/No_Disponible.cur), auto;
+    cursor: url(https://cdn.jsdelivr.net/gh/fz6m/Private-web@1.5/image/cursor/No_Disponible.cur) 15 15, auto;
     -webkit-appearance: button
 }
 
@@ -7623,7 +7623,7 @@ a.toc-link {
 .emotion-item,
 .on-hover,
 .tieba-container span {
-    cursor: url(https://cdn.jsdelivr.net/gh/fz6m/Private-web@1.5/image/cursor/No_Disponible.cur), auto
+    cursor: url(https://cdn.jsdelivr.net/gh/fz6m/Private-web@1.5/image/cursor/No_Disponible.cur) 15 15, auto
 }
 
 .alignright {
@@ -8109,7 +8109,7 @@ a.toc-link {
     padding: 2px;
     text-shadow: none;
     border-radius: 0 0 5px 5px;
-    cursor: url(https://cdn.jsdelivr.net/gh/fz6m/Private-web@1.5/image/cursor/texto.cur), auto
+    cursor: url(https://cdn.jsdelivr.net/gh/fz6m/Private-web@1.5/image/cursor/texto.cur) 15 15, auto
 }
 
 .highlight-wrap code[data-rel]:before {
