@@ -8648,25 +8648,6 @@ h1[id*=toc-head]::before,h2[id*=toc-head]::before,h3[id*=toc-head]::before,h4[id
 
 /*custom*/
 
-/*文章长期未更新警告*/
-.warn{
-    background: #ff953f;
-    background: -webkit-gradient(linear,left top,right top,from(#ff953f),to(#ffb449));
-    background: -webkit-linear-gradient(left,#ff953f,#ffb449);
-    background: linear-gradient(90deg,#ff953f,#ffb449);
-    text-shadow: 0 -1px #ff953f;
-    -webkit-box-shadow: 0 3px 5px rgba(255,154,73,.5);
-    box-shadow: 0 3px 5px rgba(255,154,73,.5);
-    display: inline-block;
-    color: #fff;
-    font-size: 16px;
-    padding: 15px;
-    border-radius: 100px;
-}
-.warn:before {
-    content: " 🎉 ";
-}
-
 
 .particles-js-canvas-el {
   position: fixed;

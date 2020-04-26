@@ -633,3 +633,28 @@ h1.cat-title {
     text-shadow: 0px 0px 10px #666666;
     font-family: 'Merriweather Sans',Helvetica,Tahoma,Arial,'PingFang SC','Hiragino Sans GB','Microsoft Yahei','WenQuanYi Micro Hei',sans-serif;
 }
+
+/*文章长期未更新警告*/
+.warn-custom {
+    background: #FFB6C1;
+    box-shadow: 0 3px 5px rgb(216,191,216,.4);
+    color: #fff;
+    font-size: 16px;
+    padding: 15px 25px;
+    border-radius: 100px;
+    text-align: center;
+    margin: 0 auto;
+    max-width: max-content;
+}
+.warn-custom:before {
+    content: " 🌸 ";
+}
+.warn-custom a {
+    color: rgb(199,21,133,.3);
+    font-weight: bold;
+}
+@media (max-width: 860px) {
+	.warn-custom {
+		font-size: 14px;
+	}
+}
