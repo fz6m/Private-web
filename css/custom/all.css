@@ -658,3 +658,9 @@ h1.cat-title {
 		font-size: 14px;
 	}
 }
+
+/* 隐藏cookies栏 */
+
+.comment-form-cookies-consent {
+	display: none;
+}
