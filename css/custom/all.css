@@ -666,7 +666,7 @@ h1.cat-title {
 }
 
 /* 影藏热度等 */
-@media (max-width: 1024px) {
+@media (min-width: 1024px) {
 	#main-container .post-content-wrap .post-meta {
 		display: none;
 	}
