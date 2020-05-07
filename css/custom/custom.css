@@ -434,10 +434,10 @@ h1.cat-title {
 
 /* 影藏热度等 */
 @media (max-width: 1024px) {
-	#main-container.post-content-wrap.post-meta {
+	#main-container .post-content-wrap .post-meta {
 		display: none;
 	}
-	#main-container.post-content-wrap.post-title {
+	#main-container .post-content-wrap .post-title {
 		margin-bottom: -10px;
 		margin-top: 20px;
 	}
