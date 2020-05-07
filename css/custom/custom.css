@@ -441,4 +441,7 @@ h1.cat-title {
 		margin-bottom: -10px;
 		margin-top: 20px;
 	}
+	#main-container .post-content-wrap .float-content {
+		margin-top: -10px !important;
+	}
 }
