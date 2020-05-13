@@ -1,6 +1,6 @@
 (function() {
     'use strict';
-    var script = document.createElement('script');script.src = "https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js";document.head.appendChild(script);
+    // var script = document.createElement('script');script.src = "https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js";document.head.appendChild(script);
     var check = [
         'pxj', 'diss', 'ky', '酸', '素质', '人品', '不好', '垃圾', '不行', '就这', '滚', '小学生',
         'bb', '哔哔', '呵', '鸡', '黑', 'cxk', '抄', '难听', '举报', '差', '删', '聋子', '??', '？？', 'dy', '某音', '吐槽', '叭叭', '骂', '不累吗', '怼',
