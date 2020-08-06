@@ -1,6 +1,13 @@
 !(function () {
 
     var style = `
+
+        @media (max-width: 860px) {
+            .sidebar_wo {
+                display: none;
+            }
+        }
+        
         .sidebar_wo {
             position: fixed;
             bottom: 0;
