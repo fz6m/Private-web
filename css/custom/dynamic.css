@@ -84,7 +84,7 @@ div.cbp_tmlabel > p {
     transform:translateY(-3px);
 	z-index:1;
 	-webkit-box-shadow:0 15px 32px rgba(0,0,0,0.15) !important;
-	cursor: url(https://cdn.jsdelivr.net/gh/fz6m/Private-web@1.5/image/cursor/normal.cur), auto !important
+	cursor: url(https://cdn.jsdelivr.net/gh/fz6m/Private-web@3.0.0/image/cursor/normal.cur), auto !important
 }
 
 .cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel {
@@ -182,7 +182,7 @@ p.shuoshuo_time {
 }
 
 #pagination_dynamic .loading {
-    background: url(https://cdn.jsdelivr.net/gh/fz6m/Private-web@1.5/image/loading/loading-circle.svg);
+    background: url(https://cdn.jsdelivr.net/gh/fz6m/Private-web@3.0.0/image/loading/loading-circle.svg);
     background-position: center;
     background-repeat: no-repeat;
     color: #555;

@@ -318,7 +318,7 @@ div.cbp_tmlabel > p {
     transform:translateY(-3px);
 	z-index:1;
 	-webkit-box-shadow:0 15px 32px rgba(0,0,0,0.15) !important;
-	cursor: url(https://cdn.jsdelivr.net/gh/fz6m/Private-web@1.5/image/cursor/normal.cur), auto !important
+	cursor: url(https://cdn.jsdelivr.net/gh/fz6m/Private-web@3.0.0/image/cursor/normal.cur), auto !important
 }
 
 .cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel {
@@ -416,7 +416,7 @@ p.shuoshuo_time {
 }
 
 #pagination_dynamic .loading {
-    background: url(https://cdn.jsdelivr.net/gh/fz6m/Private-web@1.5/image/loading/loading-circle.svg);
+    background: url(https://cdn.jsdelivr.net/gh/fz6m/Private-web@3.0.0/image/loading/loading-circle.svg);
     background-position: center;
     background-repeat: no-repeat;
     color: #555;
@@ -441,11 +441,11 @@ p.shuoshuo_time {
 
 @font-face {
     font-family: "zhanku";
-    src: url("https://cdn.jsdelivr.net/gh/fz6m/Private-web@1.0/font/zhanku/zhanku.eot"); /* IE9 */
-    src: url("https://cdn.jsdelivr.net/gh/fz6m/Private-web@1.0/font/zhanku/zhanku.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */  
-    url("https://cdn.jsdelivr.net/gh/fz6m/Private-web@1.0/font/zhanku/zhanku.woff") format("woff"), /* chrome、firefox */
-    url("https://cdn.jsdelivr.net/gh/fz6m/Private-web@1.0/font/zhanku/zhanku.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+ */
-    url("https://cdn.jsdelivr.net/gh/fz6m/Private-web@1.0/font/zhanku/zhanku.svg#zhanku") format("svg"); /* iOS 4.1- */
+    src: url("https://cdn.jsdelivr.net/gh/fz6m/Private-web@3.0.0/font/zhanku/zhanku.eot"); /* IE9 */
+    src: url("https://cdn.jsdelivr.net/gh/fz6m/Private-web@3.0.0/font/zhanku/zhanku.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */  
+    url("https://cdn.jsdelivr.net/gh/fz6m/Private-web@3.0.0/font/zhanku/zhanku.woff") format("woff"), /* chrome、firefox */
+    url("https://cdn.jsdelivr.net/gh/fz6m/Private-web@3.0.0/font/zhanku/zhanku.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+ */
+    url("https://cdn.jsdelivr.net/gh/fz6m/Private-web@3.0.0/font/zhanku/zhanku.svg#zhanku") format("svg"); /* iOS 4.1- */
     font-style: normal;
     font-weight: normal;
 }

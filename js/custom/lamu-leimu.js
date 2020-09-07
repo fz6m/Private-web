@@ -13,7 +13,7 @@
             bottom: 0;
             z-index: 1000;
             line-height: 0;
-            cursor: url(https://cdn.jsdelivr.net/gh/fz6m/Private-web@2.0.7/image/bottom/lm.cur),pointer;
+            cursor: url(https://cdn.jsdelivr.net/gh/fz6m/Private-web@3.0.0/image/bottom/lm.cur),pointer;
         }
 
         #lamu:hover {
@@ -55,11 +55,11 @@
 
     var lamuleimuDiv = `
         <div class="sidebar_wo" id="leimu"> 
-            <img src="https://cdn.jsdelivr.net/gh/fz6m/Private-web@2.0.7/image/bottom/leimu1.png" alt="雷姆" onmouseover="this.src='https://cdn.jsdelivr.net/gh/fz6m/Private-web@2.0.7/image/bottom/leimu2.png'" onmouseout="this.src='https://cdn.jsdelivr.net/gh/fz6m/Private-web@2.0.7/image/bottom/leimu1.png'"> 
+            <img src="https://cdn.jsdelivr.net/gh/fz6m/Private-web@3.0.0/image/bottom/leimu1.png" alt="雷姆" onmouseover="this.src='https://cdn.jsdelivr.net/gh/fz6m/Private-web@3.0.0/image/bottom/leimu2.png'" onmouseout="this.src='https://cdn.jsdelivr.net/gh/fz6m/Private-web@3.0.0/image/bottom/leimu1.png'"> 
         </div>
         
         <div class="sidebar_wo" id="lamu"> 
-            <img src="https://cdn.jsdelivr.net/gh/fz6m/Private-web@2.0.7/image/bottom/lamu1.png" alt="拉姆" onmouseover="this.src='https://cdn.jsdelivr.net/gh/fz6m/Private-web@2.0.7/image/bottom/lamu2.png'" onmouseout="this.src='https://cdn.jsdelivr.net/gh/fz6m/Private-web@2.0.7/image/bottom/lamu1.png'"> 
+            <img src="https://cdn.jsdelivr.net/gh/fz6m/Private-web@3.0.0/image/bottom/lamu1.png" alt="拉姆" onmouseover="this.src='https://cdn.jsdelivr.net/gh/fz6m/Private-web@3.0.0/image/bottom/lamu2.png'" onmouseout="this.src='https://cdn.jsdelivr.net/gh/fz6m/Private-web@3.0.0/image/bottom/lamu1.png'"> 
         </div>
     `;
     var div = document.createElement('div');
