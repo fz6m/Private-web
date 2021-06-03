@@ -1,2 +1,6 @@
-# Private-web
-自用加速资源
+
+<div align="center">
+
+#### (\*/ω＼\*)
+
+</div>
